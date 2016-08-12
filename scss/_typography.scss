@@ -1,0 +1,184 @@
+/******************************************************
+    
+    TYPOGRAPHY
+
+******************************************************/
+
+
+body {
+	font-family: "Gotham SSm A", "Gotham SSm B";
+	font-style: normal;
+	font-weight: 400;
+}
+
+.two-col {
+	@include breakpoint(lap) {
+		column-count: 2;	
+	}
+}
+
+p,span {
+	color: palette(grey);
+    font-size: .9rem;
+    line-height: 1.35;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+}
+
+
+h2 {
+	line-height: 1.15em;
+	font-weight: 500;
+	margin-bottom: 2.5em;
+	@include breakpoint(lap) {
+		font-size: 2em;
+		letter-spacing: -1px;
+	}
+	.sub-title {
+		display: block;
+		color: palette(grey,x-light);
+		font-size: .7em;
+		line-height: 1.1em;
+		text-transform: none;
+	}
+}
+
+
+h2.push {
+	margin-bottom: 3.25em;
+}
+
+h2.pull {
+	margin-bottom: 0em;
+}
+
+
+
+section.intro h1 {
+	font-weight: 200;
+	font-size: 3rem;
+	.videoStrap {
+		font-weight: 400;
+		color: $white;
+		display: block;
+		font-size: 1.45em;
+    	line-height: 1.15;
+	}
+}
+
+
+
+
+
+/* CAROUSELS */
+
+.video-carousel {
+	p {
+	    margin: 3em 0 6em 0;
+	    font-size: 1.05em;
+	    line-height: 1.8;	
+	}
+	.item-caption {
+		span.h2 {
+			font-weight: 700;
+			color: $base;
+			font-size: 1.15em;    
+			margin-top: 1em;
+    		margin-bottom: 0;
+    		display: block;
+		}
+		p {
+			font-size: 1em;
+			margin: .5em 0;
+			color: $pink;
+		}
+	}
+}
+
+
+
+
+
+/* LEARN MORE */
+
+section.learn-more {
+	a {
+		color: $base;
+		text-decoration: none;
+		&:hover {
+			color: $pink;
+		}
+		p {
+			&:hover {
+				color: $pink;
+			}
+		}
+	}
+	h2 {
+		text-align: center;
+	}
+	h3 {
+		font-weight: 700;    
+		font-size: 1em;
+    	line-height: 1.15;
+    	margin-top: 0;
+    	margin-bottom: 0;
+	}
+	p {
+		margin-top: .5em;
+	}
+}
+
+
+
+
+/* FORM */
+
+
+
+form {
+	input,
+	textarea {
+		font-size: 1.2em;
+		font-family: "Gotham SSm A", "Gotham SSm B";
+	}
+	
+}
+
+/* NAVIGATION */
+
+.nav-collapse a {
+	font-family: "Gotham SSm A", "Gotham SSm B";
+	font-style: normal;
+	font-weight: 700;
+	font-size: .85em;
+}
+
+
+
+/* tooltipster-sidetip */
+
+.tooltipster-sidetip.tooltipster-noir .tooltipster-box {
+	h3 {
+		font-weight: 700;
+		font-size: 1em;
+		color: #222;
+		margin-bottom: 1em;
+	}
+	p {
+		font-size: .85em;
+	}
+}
+
+
+.tooltipster-sidetip.tooltipster-shadow .tooltipster-box {
+	h3 {
+		font-weight: 700;
+		font-size: .85em;
+		color: #222;
+	}
+}
+
+
